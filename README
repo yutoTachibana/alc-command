@@ -1,0 +1,36 @@
+* What
+
+  alc-command is a command-line client for alc.
+
+* Install
+
+  $ easy_install mechanize
+  $ easy_install BeautifulSoup
+  $ sudo cp alc.py /usr/bin/alc
+  $ sudo chmod 755 /usr/bin/alc
+
+* Screenshot
+
+  $ alc test
+  検索ワード: test 
+  
+  test
+  【名】
+    テスト、試験｛しけん｝、検定｛けんてい｝、検査｛けんさ｝
+    ためすもの、試練｛しれん｝、試金石｛しきんせき｝
+  【自動】
+    テスト［試験｛しけん｝・検査｛けんさ｝・検証｛けんしょう｝・吟味｛ぎんみ｝・考査｛こうさ｝］を行う
+    テスト［試験｛しけん｝・検査｛けんさ｝］を受ける、評価｛ひょうか｝を得る
+    テスト［試験｛しけん｝・検査｛けんさ｝］の結果｛けっか｝は～である
+  【他動】
+    ～をテスト［試験｛しけん｝・検査｛けんさ｝・検証｛けんしょう｝・吟味｛ぎんみ｝・考査｛こうさ｝］する
+    《化》～を分析｛ぶんせき｝する
+  【レベル】1、【発音】te'st、【＠】テスト、【変化】《動》tests | testing | tested
+
+  $ alc テスト
+  検索ワード: テスト 
+  
+  examination（教育分野の）
+  exam（特定の領域の）〔【語源】examinationの省略形〕
+  test
+  
