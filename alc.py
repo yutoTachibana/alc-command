@@ -4,11 +4,15 @@
 import mechanize, sys, re
 from BeautifulSoup import BeautifulSoup
 
-if (len(sys.argv) != 2): quit("検索ワードを指定してください")
+if (len(sys.argv) == 1): quit("検索ワードを指定してください")
 
-print "検索ワード:",sys.argv[1],"\n"
+print "\n"
+print "=============================="
+print "検索ワード:" + " ".join(sys.argv[1:])
+print "=============================="
 
-BASE_URL = "http://eow.alc.co.jp/"+sys.argv[1]+"/UTF-8/?ref=sa"
+keyword = "+".join(sys.argv[1:])
+BASE_URL = "http://eow.alc.co.jp/" + keyword + "/UTF-8/?ref=sa"
 soup = BeautifulSoup(mechanize.Browser().open(BASE_URL).get_data())
 li = soup.find(id="resultsList").find("li")
 
